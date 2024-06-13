@@ -1,20 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-
 :root {
     --color0: #61fcff;
+    --color1: #000;
+    --color2: #fff;
+    --color3: #60ec8f;
 }
 
-body {
-    font-family: Anonymous Pro;
+html, header, body, main, footer{
+    background-color: var(--color1);
+    color: var(--color2);
 }
 
-#solucoes #landing-page h2{
-    text-align: left;
+.navbar {
+    background-color: var(--color1);
+}
+
+.interface > section {
+    padding: 20px;
+}
+
+/* DETALHES DE SERVIÇOS */
+.solucoes > .row {
+    margin-bottom: 20%;
+}
+
+.solucoes > .row p {
+    font-size: 1.3rem;
+}
+
+.solucoes > .row img{
+    border-radius: 20px;
+    width: 90%;
+}
+
+section .col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+section .button {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color0);
+    color: var(--color1);
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+}
+section .button:hover{
+    background: linear-gradient(-65deg, #60ec8f, #2e894c, #173e24);
+    color: var(--color2);
+}
+
+::-webkit-scrollbar {
+    width: 0px; /* Largura da barra de rolagem */
+}
+
+
+@media screen and (width <= 1028px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .row img{
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .row a {
+        margin-top: 20px;
+    }
+
+    .solucoes .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
 }

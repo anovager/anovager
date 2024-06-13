@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anovager</title>
 
+    <link rel="stylesheet" href="css/styles.css">
+
     <!-- BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -17,11 +19,12 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" style="height: 80px;">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Anovager</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -35,8 +38,8 @@
                                 Soluções
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#site">Site</a></li>
                                 <li><a class="dropdown-item" href="#landingpage">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="#ecommerce">E-Commerce</a></li>
                                 <li><a class="dropdown-item" href="#planilha">Planilha (Excel e Google Sheets)</a></li>
                                 <li><a class="dropdown-item" href="#osint">OSINT</a></li>
                             </ul>
@@ -54,37 +57,89 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
         <section class="home" id="home">
             <video width="100%" autoplay loop muted>
                 <source src="medias/anovager_video_background_banner.mp4" type="video/mp4">
             </video>
         </section>
-        <section class="solucoes" id="solucoes">
-            <div class="container text-center">
-                <div class="row">
-                  <div class="col">
-                    <img src="medias/anovager_img_01.jpeg" alt="Imagem gerada com IA representante uma Landing Page" width="80%">
-                  </div>
-                  <div class="col" id="landing-page">
-                    <h1>Landing Pages</h1>
-                    <h2>O que é?</h2>
-                    <p>Uma landing page é uma página da web projetada com um propósito específico em mente, geralmente relacionada a uma campanha de marketing ou ação direcionada, como promover um produto, serviço ou evento. É uma página simples e focada, projetada para converter visitantes em leads ou clientes.</p>
-                    
-                    <h2>Por que ter uma Landing Page?</h2>
-                    <p>A importância de ter uma landing page reside na sua capacidade de direcionar a atenção dos visitantes para uma oferta específica, sem distrações desnecessárias. Ao contrário de uma página inicial ou uma página de destino genérica, uma landing page é criada com um objetivo singular em mente e é altamente otimizada para incentivar os visitantes a realizar uma ação desejada, como preencher um formulário, fazer uma compra ou se inscrever em uma lista de e-mails.</p>
-                  </div>
+    </header>
+    <main class="interface">
+        <section class="solucoes container-fluid" id="solucoes">
+            <div class="row" id="landingpage">
+                <div class="col">
+                    <img src="medias/anovager_img_01.jpeg" alt="Representação de uma Landing Page gerada com IA">
                 </div>
-              </div>
+                <div class="col">
+                    <h1>O que é uma Landing Page?</h1>
+                    <p>Imagine que a internet é um enorme oceano. Uma landing page é como uma isca irresistível que você
+                        joga para atrair os peixes certos - seus clientes em potencial. É uma página feita sob medida
+                        para convencer as pessoas a agir: comprar, se inscrever, entrar em contato. É como ter um
+                        vendedor amigo que trabalha para você 24/7, sem custo extra. Então, se você quer pescar os
+                        melhores clientes, precisa de uma landing page.</p>
+                        <a href="#contratar" class="button">SABER MAIS</a>
+                </div>
+            </div>
+            <div class="row" id="ecommerce">
+                <div class="col">
+                    <h1>O que é um E-commerce ou Loja Virtual?</h1>
+                    <p>Imagine que a internet é um enorme oceano. Uma landing page é como uma isca irresistível que você
+                        joga para atrair os peixes certos - seus clientes em potencial. É uma página feita sob medida
+                        para convencer as pessoas a agir: comprar, se inscrever, entrar em contato. É como ter um
+                        vendedor amigo que trabalha para você 24/7, sem custo extra. Então, se você quer pescar os
+                        melhores clientes, precisa de uma landing page.</p>
+                        <a href="#contratar" class="button">SABER MAIS</a>
+                </div>
+                <div class="col">
+                    <img src="medias/anovager_ecommerce_lojavirtual_img_02.jpeg"
+                        alt="Representação de uma loja virtual gerada com IA">
+                </div>
+            </div>
+            <div class="row" id="planilha">
+                <div class="col">
+                    <img src="medias/anovager_dashboards_planilhas_sheet_excel_img_04.jpeg"
+                        alt="Representação de uma planilha e dashboards gerada com IA">
+                </div>
+                <div class="col">
+                    <h1>O que é uma planilha?</h1>
+                    <p>Uma planilha é um documento eletrônico que consiste em linhas e colunas, formando uma grade onde
+                        você pode inserir dados, realizar cálculos e criar gráficos. Elas são comumente usadas para
+                        organizar informações de forma estruturada, realizar cálculos automáticos e analisar dados.
+                        Programas populares para criar planilhas incluem o Microsoft Excel, Google Sheets e LibreOffice
+                        Calc. As planilhas são amplamente utilizadas em diversos campos, desde contabilidade e finanças
+                        até gerenciamento de projetos e análise de dados.</p>
+                        <a href="#contratar" class="button">SABER MAIS</a>
+                </div>
+            </div>
+            <div class="row" id="osint">
+                <div class="col">
+                    <h1>O que é OSINT (Open-Source Intelligence)?</h1>
+                    <p>OSINT significa "Open-Source Intelligence", que traduzido para o português seria "Inteligência de
+                        Fontes Abertas". Trata-se de uma prática de coleta, análise e interpretação de informações
+                        disponíveis publicamente, geralmente na internet, para obter insights e inteligência sobre
+                        determinado assunto, pessoa, organização ou evento.
+
+                        Essas informações podem ser encontradas em sites, redes sociais, fóruns online, documentos
+                        públicos, notícias, entre outros meios acessíveis ao público em geral. O objetivo do OSINT é
+                        reunir dados relevantes e contextualizá-los para obter uma compreensão mais ampla de um
+                        determinado tema, auxiliando em investigações, tomada de decisões estratégicas, segurança
+                        cibernética, entre outros campos.</p>
+                        <a href="#contratar" class="button">SABER MAIS</a>
+                </div>
+                <div class="col">
+                    <img src="medias/anovager_osint_open_source_intelligence_img_03.jpeg"
+                        alt="Representação de OSINT gerada com IA">
+                </div>
+            </div>
         </section>
-        <section class="sobre" id="sobre"></section>
-        <section class="portfolio" id="portfolio"></section>
-        <section class="contato" id="contato"></section>
+        <section class="sobre container-fluid" id="sobre"></section>
+        <section class="portfolio container-fluid" id="portfolio"></section>
+        <section class="contato container-fluid" id="contato"></section>
     </main>
-    <footer>
+    <footer class="text-center">
         <p><i>Todos os direitos reservados para &copy; <strong>Anovager</strong></i></p>
     </footer>
-</body>
 
+    <script src="js/script.js"></script>
+
+</body>
 </html>
