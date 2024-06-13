@@ -4,32 +4,54 @@
     --color0: #61fcff;
     --color1: #000;
     --color2: #fff;
-    --color3: #60ec8f;
+    --color3: #c44ae2;
 }
 
-html, header, body, main, footer{
+html,
+header,
+body,
+main,
+footer {
     background-color: var(--color1);
     color: var(--color2);
 }
 
+/* MENU */
 .navbar {
     background-color: var(--color1);
+    position: fixed;
+    top: 0;
 }
 
-.interface > section {
+#navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Adapte a opacidade conforme necessário */
+}
+
+
+/* INTERFACE */
+.interface>section {
     padding: 20px;
 }
 
 /* DETALHES DE SERVIÇOS */
-.solucoes > .row {
+.solucoes .row:nth-child(1) {
+    margin-top: 100px;
+}
+
+.solucoes>.row {
     margin-bottom: 20%;
 }
 
-.solucoes > .row p {
+.solucoes>.row p {
     font-size: 1.3rem;
 }
 
-.solucoes > .row img{
+.solucoes>.row img {
     border-radius: 20px;
     width: 90%;
 }
@@ -51,30 +73,46 @@ section .button {
     border-radius: 20px;
     font-weight: 500;
 }
-section .button:hover{
-    background: linear-gradient(-65deg, #60ec8f, #2e894c, #173e24);
+
+section .button:hover {
+    background: linear-gradient(-65deg, #c44ae2, #762a89, #1b0521);
     color: var(--color2);
 }
 
 ::-webkit-scrollbar {
-    width: 0px; /* Largura da barra de rolagem */
+    width: 0px;
+    /* Largura da barra de rolagem */
 }
 
+.back_top>i {
+    position: fixed;
+    bottom: 5px;
+    right: 1%;
+    font-size: 3rem;
+    color: var(--color0);
+}
 
-@media screen and (width <= 1028px) {
+.back_top i:hover {
+    color: var(--color3);
+}
+
+@media screen and (width <=1028px) {
     .row {
         display: flex;
         flex-direction: column;
     }
-    .row img{
+
+    .row img {
         border-radius: 20px;
         margin-bottom: 20px;
     }
+
     .row a {
         margin-top: 20px;
     }
 
-    .solucoes .row:nth-child(2), .row:nth-child(4){
+    .solucoes .row:nth-child(2),
+    .row:nth-child(4) {
         flex-direction: column-reverse;
     }
 }

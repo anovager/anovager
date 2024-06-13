@@ -7,8 +7,8 @@
     <title>Anovager</title>
 
     <link rel="stylesheet" href="css/styles.css">
-
     <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Anovager</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -134,12 +134,12 @@
         <section class="sobre container-fluid" id="sobre"></section>
         <section class="portfolio container-fluid" id="portfolio"></section>
         <section class="contato container-fluid" id="contato"></section>
+        <a href="#" class="back_top" id="scrollToTopBtn" title="Voltar ao Topo"><i class="bi bi-caret-up"></i></a>
     </main>
     <footer class="text-center">
         <p><i>Todos os direitos reservados para &copy; <strong>Anovager</strong></i></p>
     </footer>
 
     <script src="js/script.js"></script>
-
 </body>
 </html>
