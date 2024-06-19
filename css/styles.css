@@ -5,6 +5,12 @@
     --color1: #000;
     --color2: #fff;
     --color3: #c44ae2;
+    --color4: #db8bef;
+}
+
+::selection {
+    background-color: var(--color0);
+    color: #000;
 }
 
 html,
@@ -29,7 +35,6 @@ footer {
 
 .navbar-scrolled {
     background-color: rgba(255, 255, 255, 0.8);
-    /* Adapte a opacidade conforme necessário */
 }
 
 
@@ -44,7 +49,11 @@ footer {
 }
 
 .solucoes>.row {
-    margin-bottom: 20%;
+    margin-bottom: 15%;
+}
+
+.solucoes>.row:nth-child(4) {
+    margin-bottom: 0px;
 }
 
 .solucoes>.row p {
@@ -54,6 +63,10 @@ footer {
 .solucoes>.row img {
     border-radius: 20px;
     width: 90%;
+}
+
+section {
+    margin-bottom: 15%;
 }
 
 section .col {
@@ -71,7 +84,7 @@ section .button {
     color: var(--color1);
     text-decoration: none;
     border-radius: 20px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 section .button:hover {
@@ -79,9 +92,63 @@ section .button:hover {
     color: var(--color2);
 }
 
+#sobre {
+    padding: 40px;
+    color: var(--color2);
+}
+
+#sobre h2 {
+    font-size: 1.3rem;
+    background-color: var(--color0);
+    color: var(--color1);
+    padding: 8px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#sobre .row > .col {
+    margin: 20px 0px;
+}
+
+#portfolio > .row {
+    width: 100%;
+}
+
+#portfolio > .row .card {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+#portfolio > .row .card:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: .5s;
+}
+
+#portfolio > .row .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+#portfolio .btn-primary {
+    width: 30%;
+    padding: 15px;
+    background-color: var(--color0);
+    color: var(--color1);
+    font-weight: bold;
+}
+
+#portfolio .btn-primary:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
 ::-webkit-scrollbar {
     width: 0px;
-    /* Largura da barra de rolagem */
 }
 
 .back_top>i {
