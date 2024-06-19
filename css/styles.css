@@ -182,4 +182,8 @@ section .button:hover {
     .row:nth-child(4) {
         flex-direction: column-reverse;
     }
+
+     #portfolio .btn-primary {
+        width: 100%;
+    }
 }
