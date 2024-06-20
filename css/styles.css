@@ -13,9 +13,17 @@
     color: #000;
 }
 
+header {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+}
+
 html,
-header,
 body,
+header,
 main,
 footer {
     background-color: var(--color1);
@@ -33,14 +41,9 @@ footer {
     transition: background-color 0.3s ease-in-out;
 }
 
-.navbar-scrolled {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-
-/* INTERFACE */
 .interface>section {
     padding: 20px;
+    background-color: var(--color1);
 }
 
 /* DETALHES DE SERVIÇOS */
@@ -164,6 +167,9 @@ section .button:hover {
 }
 
 @media screen and (width <=1028px) {
+    header {
+        height: 50vh;
+    }
     .row {
         display: flex;
         flex-direction: column;
@@ -183,7 +189,17 @@ section .button:hover {
         flex-direction: column-reverse;
     }
 
-     #portfolio .btn-primary {
+    #portfolio .btn-primary {
         width: 100%;
+    }
+}
+
+
+@media screen and (width <=720px) {
+    header {
+        height: 30vh;
+    }
+    #home img {
+        margin-top: 10%;
     }
 }
