@@ -9,12 +9,13 @@
 }
 
 ::selection {
-    background-color: var(--color0);
-    color: #000;
+    background-color: var(--color2);
+    color: var(--color1);
 }
 
 header {
     height: 100vh;
+    margin-bottom: 10vh;    
 }
 
 body {
@@ -44,6 +45,7 @@ footer {
 .interface>section {
     padding: 20px;
     background-color: var(--color1);
+    margin-bottom: 40px;
 }
 
 /* DETALHES DE SERVIÇOS */
@@ -66,10 +68,6 @@ footer {
 .solucoes>.row img {
     border-radius: 20px;
     width: 90%;
-}
-
-section {
-    margin-bottom: 15%;
 }
 
 section .col {
@@ -96,8 +94,11 @@ section .button:hover {
 }
 
 #sobre {
+    background-color: var(--color2);
     padding: 40px;
-    color: var(--color2);
+    color: var(--color1);
+    padding: 40px;
+    z-index: -1;
 }
 
 #sobre h2 {
@@ -109,7 +110,7 @@ section .button:hover {
     width: 100%;
 }
 
-#sobre .row > .col {
+#sobre .row .col {
     margin: 20px 0px;
 }
 
@@ -127,7 +128,11 @@ section .button:hover {
 #portfolio > .row .card:hover {
     cursor: pointer;
     scale: 1.1;
+    transition: 1s;
+}
+#portfolio > .row .card:hover img {
     transition: .5s;
+    border: 2px solid var(--color0);
 }
 
 #portfolio > .row .card-body {
@@ -150,6 +155,40 @@ section .button:hover {
     color: var(--color2);
 }
 
+#solucoes .row{
+    margin-top: 5vh;
+}
+#solucoes .row .col{
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    color: var(--color2);
+}
+#solucoes .row .col .card-body{
+    width: 90%;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+#solucoes .row .col img{
+    border-radius: 0;
+}
+
+
+#contato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contato a {
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--color3);
+    padding: 20px;
+    width: 40%;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
 }
@@ -164,6 +203,27 @@ section .button:hover {
 
 .back_top i:hover {
     color: var(--color3);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+footer .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .social-media i{
+    color: var(--color3);
+    font-size: 2rem;
+}
+footer .social-media a:hover > i{
+    color: var(--color4);
 }
 
 @media screen and (width <=1028px) {
