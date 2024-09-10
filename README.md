@@ -1,1 +1,1 @@
-[ANOVAGER]('https://anovager.com')
+[ANOVAGER](https://anovager.com)
