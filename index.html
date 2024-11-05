@@ -1,220 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anovager</title>
-    <link rel="icon" type="image/x-icon" href="/medias/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- BOOSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
-
-<body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./medias/anovager_sem_fundo.png" width="15%"/></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Anovager</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Anovager</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfólio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item dropdown" data-bs-theme="dark">
-                            <a class="nav-link dropdown-toggle" href="#solucoes" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Soluções
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#landingpage">Landing Page</a></li>
-                                <li><a class="dropdown-item" href="#site">Site Institucional</a></li>
-                                <li><a class="dropdown-item" href="#ecommerce">E-Commerce</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contato</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="home" id="home">
-            <img src="medias/anovager_video_background_banner.gif" alt="Construindo Digitalmente com Anovager"
-                width="100%">
-        </section>
-    </header>
-
-    <main class="interface">
-        <section class="portfolio container-fluid" id="portfolio">
-            <h1 class="text-center">PORTFÓLIO</h1>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="medias/lilianribeiroimoveis_anovager.png"
-                            alt="Lilian Ribeiro - Corretora de Imóveis">
-                        <div class="card-body">
-                            <h5 class="card-title">Lilian Ribeiro</h5>
-                            <p class="card-text">Corretora de Imóveis</p>
-                            <a href="https://lilianribeiroimoveis.com" class="btn btn-primary" target="_blank">Visitar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="medias/puppindesign_anovager.png"
-                            alt="Puppin Design - Identidade Visual">
-                        <div class="card-body">
-                            <h5 class="card-title">Puppin Design</h5>
-                            <p class="card-text">Designer de desenvolvimento de identidade Visual</p>
-                            <a href="https://puppindesign.com" class="btn btn-primary" target="_blank">Visitar</a>
-                        </div>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Desenvolvimento</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Automação, Site, Loja Virtual e Planilha</h2>
+                        <a class="btn btn-primary" href="#about">Iniciar</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="medias/mitsutake_anovager.png"
-                            alt="Mitsutake - Assessoria Jurídica">
-                        <div class="card-body">
-                            <h5 class="card-title">Mitsutake - Assessoria Jurídica</h5>
-                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                                preencher o conteúdo do card.</p>
-                            <a href="https://mitsutakeadv.com.br" class="btn btn-primary" target="_blank">Visitar</a>
-                        </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Soluções para o seu Negócio</h2>
+                        <p class="text-white-50">
+                            Desenvolvemos automações para otimizar os processos operacionais da sua empresa, criamos a sua loja online (e-commerce) para você iniciar as suas vendas, planilhas para ter a gerência do seu negócio e site para estar visível para o mundo virtual!
+                        </p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="card-img-top" src="medias/ricardopiscineiro_anovager.png"
-                            alt="Ricardo Piscineiro - Limpeza de piscinas">
-                        <div class="card-body">
-                            <h5 class="card-title">Ricardo Piscineiro - Higienização de Piscinas</h5>
-                            <p class="card-text">Tratamento de piscinas com produtos específicos para uma melhor higiene
-                                e descontaminação.</p>
-                            <a href="http://ricardopiscineiro.free.nf" class="btn btn-primary"
-                                target="_blank">Visitar</a>
-                        </div>
-                    </div>
-                </div>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
-        <section class="sobre container-fluid" id="sobre">
-            <h1 class="text-center">SOBRE</h1>
-            <div class="container-fluid">
-                <div class="text">
-                    <div class="row">
-                        <div class="col">
-                            <h2>Desenvolvimento Web</h2>
-                            <p>Especializados em criação de sites institucionais e landing pages que combinam
-                                funcionalidade moderna com design <strong>atraente</strong> e
-                                <strong>intuitivo</strong>.</p>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Automações</h4>
+                            <p class="text-black-50 mb-0">Otimize o seu tempo. Automatize processos operacionais e repetitivos.</p>
                         </div>
-                        <div class="col">
-                            <h2>Personalização e Otimização</h2>
-                            <p>Utilizamos técnicas avançadas de <strong>SEO (Search Engine Optimization)</strong> e
-                                otimização para garantir que seu site tenha uma presença online eficaz e seja facilmente
-                                encontrado nos motores de busca.</p>
-                        </div>
-                        
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <h2>Segurança e Confidencialidade</h2>
-                            <p>Oferecemos serviços de pesquisa <strong>OSINT (Open Source Intelligence)</strong> com
-                                google hacking, utilizando técnicas éticas para obtenção de informações relevantes,
-                                garantindo sempre a segurança e confidencialidade dos dados.</p>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Loja Virtual (E-commerce)</h4>
+                                    <p class="mb-0 text-white-50">Não perca tempo e comece a vender online. Faça a sua renda!</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <h2>Compromisso com a Qualidade</h2>
-                            <p>Nosso fundador possui mais de <strong>100 certificações e microcertificações</strong> em
-                                diversas áreas da tecnologia, assegurando que nossa equipe esteja sempre atualizada com
-                                as últimas tendências e melhores práticas do mercado.</p>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Planilha</h4>
+                                    <p class="mb-0 text-white-50">Não tem um controle Financeiro, RH, Produção ou Finanças Pessoais? Deixe com a gente!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="solucoes container-fluid" id="solucoes">
-            <h1 class="text-center">Soluções</h1>
-            <div class="row">
-                <div class="card col" id="site">
-                    <img src="medias/site anovager.jpg" class="card-img-top" alt="Site Institucional em varios dispositivos">
-                    <div class="card-body">
-                    <h2 class="text-center">Site Institucional</h2>
-                      <ul type="square">
-                        <li>Design Responsivo</li>
-                        <li>SEO (Otimização para motores de pesquisa)</li>
-                        <li>Otimização de Imagens</li>
-                      </ul>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Cadastre o seu e-mail e descubra novas possiblidades!</h2>
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Email address input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Insira o seu endereço de e-mail" aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Receber Novidades!</button></div>
+                            </div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">E-mail obrigatório</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">E-mail inválido</div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 mt-2 text-white">
+                                    <div class="fw-bolder">Enviado com sucesso!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
                     </div>
-                  </div>
-                  <div class="card col" id="landingpage">
-                    <img src="medias/landing page anovager.jpg" class="card-img-top" alt="Site Institucional em varios dispositivos">
-                    <div class="card-body">
-                    <h2 class="text-center">Landing Page</h2>
-                      <ul type="square">
-                        <li>Design Responsivo</li>
-                        <li>SEO (Otimização para motores de pesquisa)</li>
-                        <li>Otimização de Imagens</li>
-                        <li>Call to action (Chamada para ação)</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card col" id="ecommerce">
-                    <img src="medias/ecommerce anovager.jpg" class="card-img-top" alt="Site Institucional em varios dispositivos">
-                    <div class="card-body">
-                    <h2 class="text-center">E-Commerce / Loja Virtual</h2>
-                      <ul type="square">
-                        <li>Design Responsivo</li>
-                        <li>SEO (Otimização para motores de pesquisa)</li>
-                        <li>Otimização de Imagens</li>
-                        <li>Configuração de Fretes</li>
-                        <li>Criação de títulos</li>
-                        <li>Criação de descrições</li>
-                      </ul>
-                    </div>
-                  </div>
+                </div>
             </div>
         </section>
-        <section class="contato container-fluid" id="contato">
-            <a href="https://wa.me/+5534998823842" class="button" target="_blank">Entrar em Contato</a>
-        </section>
-        <a href="#" class="back_top" id="scrollToTopBtn" title="Voltar ao Topo"><i class="bi bi-caret-up"></i></a>
-    </main>
-
-    <footer class="text-center">
-        <p><i>Todos os direitos reservados para &copy; <strong>Anovager</strong></i></p>
-        <div>
-            <h3>Redes Sociais</h3>
-            <div class="social-media">
-                <a href="https://www.instagram.com/anovager" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/anovageran" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Localização</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Uberlândia - Minas Gerais (MG)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Contato</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">anovager@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="https://instagram.com/anovager" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
             </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-
-</body>
-
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Anovager 2024</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
