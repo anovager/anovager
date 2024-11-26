@@ -333,6 +333,21 @@ nav .btn-contatar:hover {
     line-height: 20vh;
   }
 
+/* Seções inicialmente ocultas */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  /* Translação para a animação de entrada */
+  transition: opacity 1s ease, transform 1s ease;
+  /* Animação suave */
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  /* Retorna à posição original */
+}
+
 @media only screen and (max-width: 768px) {
 
   header #menu-button {
