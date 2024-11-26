@@ -334,7 +334,7 @@ nav .btn-contatar:hover {
   }
 
 /* Seções inicialmente ocultas */
-.section {
+.transition_effect {
   opacity: 0;
   transform: translateY(50px);
   /* Translação para a animação de entrada */
@@ -342,7 +342,7 @@ nav .btn-contatar:hover {
   /* Animação suave */
 }
 
-.section.visible {
+.transition_effect.visible {
   opacity: 1;
   transform: translateY(0);
   /* Retorna à posição original */
@@ -404,7 +404,9 @@ nav .btn-contatar:hover {
     font-weight: bold;
     margin-left: 10px;
   }
-  
+  .contato > .social-media {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 1048px) {
