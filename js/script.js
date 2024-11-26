@@ -19,7 +19,7 @@ function isSectionInView(section) {
 
 // Função para adicionar a classe 'visible' quando a seção estiver visível
 function revealSectionsOnScroll() {
-  const sections = document.querySelectorAll('.section'); // Seleciona todas as seções
+  const sections = document.querySelectorAll('.transition_effect'); // Seleciona todas as seções
 
   sections.forEach(section => {
     if (isSectionInView(section)) {
