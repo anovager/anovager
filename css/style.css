@@ -312,6 +312,7 @@ nav .btn-contatar:hover {
     border: 1px solid var(--color0);
     padding: 30px;
     margin: 2px;
+    width: 90%;
   }
 
   .social-media > .col:hover {
