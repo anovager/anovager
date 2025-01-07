@@ -35,7 +35,7 @@ header .logo {
 
 header #menu-button {
   display: none;
-  color: var(--color2);
+  color: var(--color1);
   font-size: 1.2rem;
   border: 2px solid var(--color0);
   padding: 15px;
@@ -81,7 +81,7 @@ nav .btn-contatar:hover {
 .interface {
   width: 100%;
   height: max;
-  background-color: #101010ef;
+  background-color: var(--color2);
   display: flex;
   flex-direction: column;
   align-items: center;
