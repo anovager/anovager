@@ -7,7 +7,7 @@
 :root {
   --color0: #00c3ff;
   --color1: #101010;
-  --color2: #fefefe;
+  --color2: #dedede;
   --color3: #b759ff;
 }
 
@@ -70,6 +70,7 @@ nav a:hover {
 nav .btn-contatar {
   border: 2px solid var(--color0);
   padding: 15px;
+  color: var(--color1);
 }
 
 nav .btn-contatar:hover {
