@@ -265,6 +265,7 @@ nav .btn-contatar:hover {
   flex-direction: column;
   align-items: center;
   margin: 10vh auto;
+  color: var(--color1);
 }
 
 .portfolio>.row {
