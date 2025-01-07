@@ -1,5 +1,6 @@
 let menuButton = document.querySelector("#menu-button")
 let listMenu = document.querySelector("#list-menu")
+const navbar = document.querySelector('.header');
 
 menuButton.addEventListener('click', () => {
   if (menuButton.className == 'closed') {
@@ -33,3 +34,12 @@ window.addEventListener('scroll', revealSectionsOnScroll);
 
 // Chama a função ao carregar a página para verificar se alguma seção já está visível
 document.addEventListener('DOMContentLoaded', revealSectionsOnScroll);
+
+// Adicionar evento de scroll
+window.addEventListener('scroll', () => {
+if (window.scrollY > 80) { // Checa se a rolagem passou de 50px
+  navbar.classList.add('scrolled');
+} else {
+  navbar.classList.remove('scrolled');
+}
+});
