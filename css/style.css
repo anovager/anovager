@@ -40,7 +40,7 @@ header .logo {
 
 header #menu-button {
   display: none;
-  color: var(--color1);
+  color: var(--color2);
   font-size: 1.2rem;
   border: 2px solid var(--color0);
   padding: 15px;
@@ -386,19 +386,19 @@ nav .btn-contatar:hover {
   header nav ul {
     z-index: 1000;
     display: none;
-    margin-top: 4vh;
     transition: .5s;
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 93vh;
     left: 0;
-    background-color: var(--color1);
+    background-color: #0e0e0efa;
     flex-direction: column;
+    justify-content: space-around;
   }
 
   nav ul a {
     color: var(--color2);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   /* SOLUÇÕES */
