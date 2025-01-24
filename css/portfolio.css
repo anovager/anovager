@@ -41,6 +41,7 @@ section {
 }
 
 .projects > .project:nth-child(even) img {
+    width: 50%;
     border-radius: 0px 20px 20px 0px;
 }
 
