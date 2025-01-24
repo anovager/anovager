@@ -1,0 +1,66 @@
+header {
+    background-color: #101010;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+    text-align: center;
+}
+
+.cta-button {
+    width: 30%;
+}
+section {
+    width: 100%;
+    margin-top: 8%;
+}
+.projects {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects > .project {
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px #cecece;
+}
+.projects > .project:hover {
+    transition: 1s;
+    box-shadow: 1px 2px 10px #cecece;
+}
+.projects > .project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.projects > .project:nth-child(even) img {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.projects > .project > img {
+    width: 50%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.project div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.project div h2 {
+    font-size: 2em;
+}
+
+.project div p {
+    font-size: 1.2em;
+    text-align: left;
+}
